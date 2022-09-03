@@ -1,0 +1,23 @@
+<%-include("partials/header");-%>
+<br><br>
+<div class="homediv">
+  <h1>Your Posts</h1>
+  <br><br>
+  <%  posts.forEach(function(post){ %>
+<%if(post.title==null && post.content ==null){%>
+  <%return;%>
+<%}else {%>
+    <h1><%=post.title%></h1>
+    <p class="p">
+    <%=post.content.substring(0,20) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+    <form class="btn" action="/delete" method="post">
+      <button class="btnn" type="submit" name="delete" value="<%=post._id%>" >Delete</button>
+    </form>
+    <br><br>
+
+    <% }}) %>
+</div>
+
+<%-include("partials/footer");-%>

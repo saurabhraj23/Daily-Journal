@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>College Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</head>
+  <body>
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>Register</span>
+            <span>Here</span>
+          </div>
+        <div class="screen-body-item">
+          <form id = "contact-form" class="app-form" action="/register" method="post">
+            <div class="app-form-group">
+              <input type="text" class="app-form-control" name = "username" placeholder="USERNAME" >
+            </div>
+            <div class="app-form-group">
+              <input type = "email" class="app-form-control" name = "emailregister" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" name = "password" placeholder="PASSWORD">
+            </div>
+
+            <div class="app-form-group buttons">
+
+              <button type="submit" class="app-form-button" value="submit">Register</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

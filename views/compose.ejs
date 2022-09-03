@@ -1,0 +1,49 @@
+<%-include("partials/header");-%>
+
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>Write</span>
+            <span>Post</span>
+          </div>
+
+          <form action="/compose" method="post">
+        <div class="screen-body-item">
+          <div class="app-form">
+            <form action="/compose" method="post">
+
+            <div class="app-form-group">
+              <input name = "title" class="app-form-control" required = "true" placeholder="Title" maxlength="20" >
+            </div>
+
+            <div class="app-form-group message">
+              <input name="content" class="app-form-control" required = "true" placeholder="Content">
+            </div>
+
+            <div class="app-form-group buttons">
+              <button type="submit" class="app-form-button" name="button">Post</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%-include("partials/footer");-%>
